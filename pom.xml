@@ -10,6 +10,7 @@
     <modules>
         <module>shicifang_common</module>
         <module>shicifang_base</module>
+        <module>shicifang_recruit</module>
     </modules>
     <packaging>pom</packaging>
 

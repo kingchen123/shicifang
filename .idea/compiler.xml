@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="shicifang_base" />
         <module name="shicifang_common" />
+        <module name="shicifang_recruit" />
       </profile>
     </annotationProcessing>
   </component>
