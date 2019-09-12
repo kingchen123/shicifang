@@ -11,6 +11,7 @@
         <module>shicifang_common</module>
         <module>shicifang_base</module>
         <module>shicifang_recruit</module>
+        <module>shicifang_qa</module>
     </modules>
     <packaging>pom</packaging>
 
