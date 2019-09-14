@@ -5,7 +5,7 @@ spring:
     name: shicifang-qa #指定服务名
   datasource:  
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://192.168.122.128:3306/tensquare_qa?useUnicode=true&amp;characterEncoding=UTF8
+    url: jdbc:mysql://192.168.122.129:3306/tensquare_qa?useUnicode=true&amp;characterEncoding=UTF8
     username: root
     password: 123
   jpa: 

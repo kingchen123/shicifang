@@ -117,6 +117,32 @@ public class ProblemController {
         return new Result(true, StatusCode.OK, "最新问答列表查询成功", new PageResult<>(problemPage.getTotalElements(), problemPage.getContent()));
     }
 
+    /**
+     * 热门问答列表 需求分析：按回复数降序排序
+     * label:标签id
+     */
+    @RequestMapping(value = "/hotlist/{labelid}/{page}/{size}", method = RequestMethod.GET)
+    public Result hotlist(@PathVariable String labelid, @PathVariable int page, @PathVariable int size) {
+        Page<Problem> problemPage = problemService.hotlist(labelid, page, size);
+        return new Result(true, StatusCode.OK, "热门问答列表查询成功", new PageResult<>(problemPage.getTotalElements(), problemPage.getContent()));
+    }
+
+
+    /**
+     *  等待回答列表
+     * label:标签id
+     */
+    @RequestMapping(value = "/waitlist/{labelid}/{page}/{size}", method = RequestMethod.GET)
+    public Result waitlist(@PathVariable String labelid, @PathVariable int page, @PathVariable int size) {
+        Page<Problem> problemPage = problemService.waitlist(labelid, page, size);
+        return new Result(true, StatusCode.OK, "等待问答列表查询成功", new PageResult<>(problemPage.getTotalElements(), problemPage.getContent()));
+    }
+
+
+
+
+
+
 /*
     *//**
      *热门问答列表

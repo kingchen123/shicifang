@@ -12,6 +12,8 @@
         <module>shicifang_base</module>
         <module>shicifang_recruit</module>
         <module>shicifang_qa</module>
+        <module>shicifang_article</module>
+        <module>shicifang_gathering</module>
     </modules>
     <packaging>pom</packaging>
 

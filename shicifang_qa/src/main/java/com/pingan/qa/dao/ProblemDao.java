@@ -23,6 +23,18 @@ public interface ProblemDao extends JpaRepository<Problem,String>,JpaSpecificati
     @Query("select p from Problem p where p.id in (select problemid from Pl where labelid = ?1) order by replytime desc")
     //@Query(value = "select p.* from tb_problem p where p.id in (select problemid from tb_pl where labelid = ?1) order by replytime desc",nativeQuery = true)
     Page<Problem> newlist(String labelid, Pageable pageable);
+
+    /**
+     * 需求分析：按回复数降序排序
+     * @param labelid
+     * @param pageable
+     * @return
+     */
+    @Query("select p from Problem p where p.id in (select problemid from Pl where labelid = ?1) order by reply desc")
+    Page<Problem> hotlist(String labelid, Pageable pageable);
+
+    @Query("select p from Problem p where p.id in (select problemid from Pl where labelid = ?1) and reply=0 order by createtime desc")
+    Page<Problem> waitlist(String labelid, Pageable pageable);
     /**
      * 热门问答列表
      *//*

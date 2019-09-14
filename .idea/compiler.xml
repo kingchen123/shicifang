@@ -6,8 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="shicifang_article" />
         <module name="shicifang_base" />
         <module name="shicifang_common" />
+        <module name="shicifang_gathering" />
         <module name="shicifang_qa" />
         <module name="shicifang_recruit" />
       </profile>

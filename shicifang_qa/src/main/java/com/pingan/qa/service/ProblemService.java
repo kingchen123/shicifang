@@ -165,6 +165,17 @@ public class ProblemService {
         return problemDao.newlist(labelid,pageable);
     }
 
+    public Page<Problem> hotlist(String labelid, int page, int size) {
+
+        Pageable pageable = PageRequest.of(page-1,size);
+        return problemDao.hotlist(labelid,pageable);
+    }
+
+    public Page<Problem> waitlist(String labelid, int page, int size) {
+        Pageable pageable = PageRequest.of(page - 1, size);
+        return problemDao.waitlist(labelid,pageable);
+    }
+
     /**
      * 热门问答列表
      *//*
