@@ -12,6 +12,7 @@
         <module name="shicifang_gathering" />
         <module name="shicifang_qa" />
         <module name="shicifang_recruit" />
+        <module name="shicifang_spit" />
       </profile>
     </annotationProcessing>
   </component>
