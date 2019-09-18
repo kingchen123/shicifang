@@ -13,6 +13,7 @@
         <module name="shicifang_qa" />
         <module name="shicifang_recruit" />
         <module name="shicifang_spit" />
+        <module name="tensquare_search" />
       </profile>
     </annotationProcessing>
   </component>
